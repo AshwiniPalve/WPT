@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <script>
+        function showmessage(event) {
+            console.log(event)
+            window.alert("Hello world!!")
+        }
+        function showconfirm(event) {
+            var ans = confirm("do you want to continue Y/N")
+
+            if (ans) {
+                alert("you selected=" + ans)
+
+            }
+            else {
+                alert("you chose=" + ans)
+            }
+        }
+        function showaddition() {
+            num1 = prompt("enter num1")
+            num2 = prompt("enter num2")
+            addition = parseInt(num1) + parseInt(num2);
+            //addition=addition('${num1} + ${num2})
+            alert("addition :" + addition)
+        }
+    </script>
+</head>
+
+<body>
+    <script>
+        console.log(window.location);
+        document.write("hello world");
+    </script>
+    <button type="button" name="btn1" onclick="showmwssage(event)">showmessage</button>
+    <button type="button" name="btn2" onclick="showconfirm(event)">showconfirm</button>
+    <button type="button" name="btn3" onclick="showaddition()">showaddition</button>
+</body>
+
+
+</html>
